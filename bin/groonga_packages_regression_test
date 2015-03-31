@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "groonga_packages_regression_test/command"
+
+GroongaPackagesRegressionTest::Command.start(ARGV)

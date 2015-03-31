@@ -1,0 +1,5 @@
+require "groonga_packages_regression_test/platform"
+require "groonga_packages_regression_test/version"
+
+module GroongaPackagesRegressionTest
+end
