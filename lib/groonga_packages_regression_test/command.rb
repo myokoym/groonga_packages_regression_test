@@ -16,8 +16,7 @@ module GroongaPackagesRegressionTest
 
     desc "go", "Run regression tests"
     def go
-      # TODO
-      #Subcommand::Go.new(Platform::NAMES).run
+      Subcommand::Go.new(Platform::NAMES).run
     end
   end
 end
