@@ -13,7 +13,7 @@ module GroongaPackagesRegressionTest
           Dir.mktmpdir(tag) do |dir|
             FileUtils.cd(dir) do
               system("dockerfiroonga #{platform} > Dockerfile")
-              system("sudo docker build -t #{tag} .")
+              system("sudo docker build -no-cache -t #{tag} .")
             end
           end
         end
