@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency("dockerfiroonga")
+  spec.add_runtime_dependency("dockerfiroonga", ">= 0.0.3")
   spec.add_runtime_dependency("thor")
 
   spec.add_development_dependency("test-unit", ">= 3.0.0")
