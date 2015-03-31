@@ -12,7 +12,9 @@ A testing tool for Groonga packages.
 
 ## Usage
 
-    $ groonga_packages_regression_test
+    $ groonga_packages_regression_test pull
+    $ groonga_packages_regression_test install
+    $ groonga_packages_regression_test go
 
 ## Authors
 
