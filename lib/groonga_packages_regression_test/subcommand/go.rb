@@ -8,7 +8,9 @@ module GroongaPackagesRegressionTest
       def run
         @platforms.each do |platform|
           tag = "groonga_packages_regression_test-#{platform}"
+          puts("-----#{tag}-----")
           system("sudo docker run -t #{tag}")
+          puts("---------------------------------------------------")
         end
       end
     end
