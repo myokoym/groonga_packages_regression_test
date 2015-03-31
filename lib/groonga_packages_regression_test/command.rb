@@ -1,6 +1,6 @@
 require "thor"
 require "groonga_packages_regression_test/platform"
-require "groonga_packages_regression_test/subcommand/pull"
+require "groonga_packages_regression_test/subcommand"
 
 module GroongaPackagesRegressionTest
   class Command < Thor
@@ -11,12 +11,13 @@ module GroongaPackagesRegressionTest
 
     desc "install", "Install Groonga packages"
     def install
-      # TODO
+      Subcommand::Install.new(Platform::NAMES).run
     end
 
     desc "go", "Run regression tests"
     def go
       # TODO
+      #Subcommand::Go.new(Platform::NAMES).run
     end
   end
 end
