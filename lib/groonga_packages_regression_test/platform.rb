@@ -1,7 +1,8 @@
 module GroongaPackagesRegressionTest
   class Platform
     NAMES = %w(
-      debian
+      debian:wheezy
+      debian:jessie
       ubuntu
       centos:5
       centos:6
